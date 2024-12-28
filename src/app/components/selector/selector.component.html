@@ -1,0 +1,40 @@
+<div class="selector-container">
+    <div class="selector-panel"> 
+        <span [ngClass]="{'active': activeButton === 'drafts'}">
+            <mat-icon>edit_square</mat-icon>
+            <button  (click)="setActive('drafts')">Drafts</button>
+            <p class="selector-num">40</p>
+        </span> 
+        <span  [ngClass]="{'active': activeButton === 'active'}">
+            <mat-icon>analytics</mat-icon>
+            <button (click)="setActive('active')">Active</button>
+            <p class="selector-num">40</p>
+        </span>  
+        <span [ngClass]="{'active': activeButton === 'inactive'}" >
+            <mat-icon>tab_inactive</mat-icon>
+            <button (click)="setActive('inactive')">Inactive</button>
+            <p class="selector-num">40</p>
+        </span>
+        <span [ngClass]="{'active': activeButton === 'deleted'}">
+            <mat-icon>remove_selection</mat-icon>
+            <button  (click)="setActive('deleted')">Deleted</button>
+            <p class="selector-num">40</p>
+        </span>
+    </div>
+    <div class="selector-search">
+        <span>
+            <button>
+                <mat-icon>filter_alt</mat-icon>
+            </button>
+            <input type="text" placeholder="Search">
+        </span>
+        <span>
+            <app-pagination 
+            [totalItems]="records.length" 
+            [itemsPerPage]="itemsPerPage" 
+            [currentPage]="currentPage"
+            (onClicked)="changePage($event)">
+            </app-pagination>
+        </span>
+    </div>
+</div>

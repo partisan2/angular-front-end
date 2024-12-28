@@ -1,0 +1,30 @@
+<div class="record-wrapper"> 
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+                <th>Department</th>
+                <th>Designation</th>
+                <th>Updated</th>
+                <th>Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let record of records">
+                <td>{{ record?.firstName }}</td>
+                <td>{{ record?.lastName }}</td>
+                <td>{{ record?.address }}</td>
+                <td>{{ record?.mobile }}</td>
+                <td>{{ record?.email }}</td>
+                <td>{{ record?.department }}</td>
+                <td>{{ record?.designation }}</td>
+                <td>{{ record?.updated }}</td>
+                <td>{{ record?.id }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

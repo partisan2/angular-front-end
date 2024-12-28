@@ -1,0 +1,17 @@
+.pagination-list{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination-list li,
+.pagination-list a{
+    text-decoration: none;
+    padding: 0 5px;
+    color: #b3b3b3;
+}
+
+.pagination-list li.active a{
+    color: #0078D4 !important;
+    font-weight: bold;
+}

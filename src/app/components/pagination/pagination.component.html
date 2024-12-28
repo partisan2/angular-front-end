@@ -1,0 +1,16 @@
+<nav>
+    <ul class="pagination-list">
+        <li><a href="#" 
+            (click)="pageClicked(currentPage - 1)"
+            ><mat-icon>chevron_left</mat-icon></a></li>
+        <li 
+        (click)="pageClicked(page)"
+        *ngFor="let page of pages" 
+        [ngClass]="{'active': page===currentPage}">
+            <a href="#">{{page}}</a>
+        </li>
+        <li><a href="#" 
+            (click)="pageClicked(currentPage + 1)"
+            ><mat-icon>chevron_right</mat-icon></a></li>
+    </ul>
+</nav>

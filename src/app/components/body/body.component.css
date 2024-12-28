@@ -1,0 +1,22 @@
+.body-container{
+    display: flex;
+    align-items: start;
+    background-color: #f2f2f2 ;
+}
+
+.item-wrapper{
+    width: 100%;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    background: white;
+}
+
+.footer p{
+    padding: 2px;
+    margin: 0;
+}

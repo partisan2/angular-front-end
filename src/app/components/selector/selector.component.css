@@ -1,0 +1,87 @@
+.selector-container{
+    display: flex;
+    justify-items:center;
+    justify-content: space-between;
+    align-items: center; 
+    margin: 20px 10px;       
+}
+
+.selector-panel{
+    display: flex;
+    flex-direction: row;
+    color: #b3b3b3;
+    
+}
+
+.selector-panel button{
+    border: none;
+    background: none;
+    color: gray;
+}
+
+.selector-panel button:hover{
+    border: none;
+    background: none;
+    color: gray;
+    cursor: pointer;
+}
+
+.selector-panel span.active{
+    color: #0078D4;
+    font-weight: bold; 
+    border-bottom: 2px solid #0078D4;
+}
+
+.selector-panel span.active .selector-num{
+    border: 2px solid #0078D4;
+}
+.selector-panel span.active button{
+    color: #0078D4;
+    font-weight: bold; 
+    border-radius: 5px; 
+}
+
+.selector-panel span{
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 5px 10px;
+}
+
+.selector-panel p{
+    display: inline;
+    font-size: 14px;
+    margin: 0;
+}
+
+.selector-num{
+    padding: 2px;
+    border: 2px solid gray;
+    border-radius: 100%;
+}
+.selector-search{
+    display: flex;
+    align-items: center;
+}
+
+.selector-search span{
+    display: flex;
+    align-items: center;
+}
+
+.selector-search button{
+    border: none;
+    background: none;
+    color: gray;
+}
+.selector-search button:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+.selector-search input{
+    border: none;
+    padding: 5px;
+    border-bottom: 1px solid gray;
+    background-color: #f2f2f2;
+}

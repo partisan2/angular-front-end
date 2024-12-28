@@ -1,0 +1,47 @@
+.record-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 98%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+    text-align: left;
+    background-color: #f9f9f9;
+}
+
+thead {
+    background-color: #fff ; 
+    color: #0078D4;
+}
+
+thead th {
+    padding: 12px 15px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+tbody tr:hover {
+    background-color: #e2f0ff; 
+}
+
+tbody td {
+    padding: 15px 15px;
+}
+
+table th,
+table td {
+    text-align: left;
+}
+
+
+
